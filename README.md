@@ -71,6 +71,21 @@ ledger_core::journal::add_journal_entry(entry)?;
 * **Auditability:** Every mutation produces an audit log record.
 
 ---
+---
+
+## 🧩 System Architecture Overview
+
+This diagram illustrates how the React UI, Elixir API, and Rust Core interact with PostgreSQL in the accounting engine:
+
+![System Architecture](A_flowchart_diagram_depicts_a_software_architectur.png)
+
+Data flows downward:
+- **React UI** — handles user interactions and displays reports  
+- **Elixir API** — orchestrates requests, authentication, and concurrency  
+- **Rust Core** — performs validated accounting logic (journal, ledger, reports)  
+- **PostgreSQL** — stores all persistent financial and configuration data  
+
+---
 
 ## 🧭 Tech Stack
 
