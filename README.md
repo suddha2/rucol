@@ -77,7 +77,7 @@ ledger_core::journal::add_journal_entry(entry)?;
 
 This diagram illustrates how the React UI, Elixir API, and Rust Core interact with PostgreSQL in the accounting engine:
 
-![System Architecture](A_flowchart_diagram_depicts_a_software_architectur.png)
+![System Architecture](rucol.png)
 
 Data flows downward:
 - **React UI** — handles user interactions and displays reports  
