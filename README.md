@@ -100,6 +100,6 @@ MIT – Use freely, with attribution appreciated.
 
 ## 🙋 About the Author
 
-**[Your Name]**
+**Sudha**
 Systems-minded developer focused on reliable, domain-driven software.
 Built this project to explore how financial cores can be designed for correctness, performance, and long-term auditability.
