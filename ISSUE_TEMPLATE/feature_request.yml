@@ -1,0 +1,73 @@
+name: Feature Request
+description: Suggest or define a new feature or module for the accounting engine
+title: "[Feature] <Your Feature Name>"
+labels: ["feature"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to **rucol** — a Rust-based accounting engine!
+        Please describe the feature or module you’d like to propose or implement.
+
+  - type: input
+    id: module
+    attributes:
+      label: Module Name
+      description: Which module does this feature belong to? (e.g., journal, account, currency)
+      placeholder: e.g., journal
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Feature Summary
+      description: Short overview of what this feature does.
+      placeholder: e.g., Add journal entry validation ensuring total debits equal total credits.
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Detailed Description
+      description: Describe the problem this feature solves, expected behavior, and examples.
+      placeholder: |
+        Problem: Unbalanced journal entries cause inconsistencies.
+        Solution: Add validation logic during entry creation.
+        Expected outcome: Rejection of unbalanced entries with clear error messages.
+
+  - type: input
+    id: milestone
+    attributes:
+      label: Related Milestone
+      description: Link or name of milestone (optional)
+      placeholder: e.g., Milestone 1 — Core Ledger Foundation
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - Low
+        - Medium
+        - High
+      default: 1
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Tasks
+      description: List implementation subtasks (use `- [ ]` checkboxes).
+      placeholder: |
+        - [ ] Implement struct JournalEntry
+        - [ ] Add validation logic
+        - [ ] Write unit tests
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Links to related issues, commits, or specs (optional)
+      placeholder: e.g., Related to #15, spec doc, etc.
